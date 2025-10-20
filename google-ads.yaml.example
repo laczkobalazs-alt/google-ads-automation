@@ -1,0 +1,39 @@
+# Google Ads API Configuration File
+# Copy this file to google-ads.yaml and fill in your credentials
+
+# Developer token from Google Ads API Center
+developer_token: "YOUR_DEVELOPER_TOKEN"
+
+# OAuth2 credentials
+client_id: "YOUR_CLIENT_ID.apps.googleusercontent.com"
+client_secret: "YOUR_CLIENT_SECRET"
+refresh_token: "YOUR_REFRESH_TOKEN"
+
+# Optional: Login customer ID (MCC account)
+# If you're using a manager account, specify it here
+login_customer_id: "YOUR_LOGIN_CUSTOMER_ID"
+
+# Optional: Linked customer ID
+# The customer account you want to access
+# linked_customer_id: "YOUR_CUSTOMER_ID"
+
+# API version (optional, defaults to latest)
+# api_version: "v15"
+
+# Logging configuration
+logging:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    default_fmt:
+      format: '[%(asctime)s - %(levelname)s] %(message).5000s'
+      datefmt: '%Y-%m-%d %H:%M:%S'
+  handlers:
+    default_handler:
+      class: logging.StreamHandler
+      formatter: default_fmt
+  loggers:
+    '':
+      handlers: [default_handler]
+      level: INFO
+
