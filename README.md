@@ -93,6 +93,10 @@ Az API indítása után a dokumentáció elérhető:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
+## További dokumentáció
+
+- [Zapier-alapú közösségi média poszt automatizálás (Google Sheets alappal)](docs/ZAPIER_SOCIAL_AUTOMATION.md)
+
 ## Használat
 
 ### Példa: Kampány teljesítmény lekérdezése
